@@ -1,0 +1,26 @@
+ERROR:django.request:Internal Server Error: /student_basic/api/
+Traceback (most recent call last):
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\Backlogs_App\views.py", line 46, in post
+    logging.basicConfig(filename='create_info.txt',level=logging.error)
+  File "C:\Users\ManishKumar\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1913, in basicConfig
+    root.setLevel(level)
+  File "C:\Users\ManishKumar\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1353, in setLevel
+    self.level = _checkLevel(level)
+  File "C:\Users\ManishKumar\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 195, in _checkLevel
+    raise TypeError("Level not an integer or a valid string: %r" % level)
+TypeError: Level not an integer or a valid string: <function error at 0x00000296DAB0F948>
+INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\Backlogs_App\views.py changed, reloading.
+ERROR:root:Student added successfully
+INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\Backlogs_App\views.py changed, reloading.

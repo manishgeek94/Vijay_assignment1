@@ -1,13 +1,13 @@
-from django.shortcuts import render,HttpResponse
-from .models import Student,Backlogs
+from django.shortcuts import render, HttpResponse
+from .models import Student, Backlogs
 from django.views.generic import View
 from django.core.serializers import serialize
 import json
-from .utils import is_json
 from .mixins import SerializeMixin
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 from .forms import StudentForm
+import logging
 
 
 @method_decorator(csrf_exempt, name='dispatch')
@@ -20,45 +20,44 @@ class Student_data(View, SerializeMixin):
         return student_info
 
     def get(self, request, *args, **kwargs):
+        logging.basicConfig(filename='Logging/get_info.txt', level=logging.info())
         data = request.body
-        valid_json = is_json(data)
-        if not valid_json:
-            return HttpResponse(json.dumps({'msg': 'Please send json data'}, indent=4), status=400)
-
         p_data = json.loads(data)
         student_id = p_data.get('id', None)
         if student_id is not None:
-            stud_obj = self.get_student_by_id(student_id)
+            # stud_obj = self.get_student_by_id(student_id)
+            stud_obj = Student.objects.get(student_id=student_id)
+            print(type(stud_obj))
             if stud_obj is None:
-                return HttpResponse(json.dumps({'msg': 'Product id not available in our system'}),
-                                    content_type='application/json')
-            json_data = self.serialize([stud_obj, ])
+                return logging.info(HttpResponse(json.dumps({'msg': 'student id not available in our system'}),
+                                                 content_type='application/json'))
+            json_data = serialize('json', stud_obj)
+            # json_data = serialize('json', stud_obj)
+            # json_data = serialize('json', qs)
+            print(json_data)
             return HttpResponse(json_data, content_type='application/json')
 
         qs = Student.objects.all()
-        json_data = self.serialize(qs)
+        print(qs)
+        json_data = serialize('json', qs)
+        print(json_data)
         return HttpResponse(json_data, content_type='application/json')
 
     def post(self, request, *args, **kwargs):
+        # logging.basicConfig(filename='create_info.txt')
         data = request.body
-        valid_json = is_json(data)
-        if not valid_json:
-            return HttpResponse(json.dumps({'msg': 'Please send json data'}), status=400)
         p_data = json.loads(data)
         form = StudentForm(p_data)
         if form.is_valid():
             obj = form.save(commit=True)
-            return HttpResponse(json.dumps({'msg': 'Product added successfully'}))
+            logging.error('Student added successfully')
+            return HttpResponse(json.dumps({'msg': 'Student added successfully'}))
         if form.errors:
             json_data = json.dumps(form.errors)
             return HttpResponse(json_data, content_type='application/json')
 
     def put(self, request, *args, **kwargs):
         data = request.body
-        valid_json = is_json(data)
-        if not valid_json:
-            return HttpResponse(json.dumps({'msg': 'Please send json data'}, indent=4), status=400)
-
         p_data = json.loads(data)
         student_id = p_data.get('id', None)
         if student_id is not None:
@@ -73,7 +72,6 @@ class Student_data(View, SerializeMixin):
                 'student_id': stud_obj.student_id,
                 'student_school': stud_obj.student_school,
 
-
             }
 
             old_student.update(new_student)
@@ -87,10 +85,7 @@ class Student_data(View, SerializeMixin):
 
     def delete(self, request, *args, **kwargs):
         data = request.body
-        valid_json = is_json(data)
-        if not valid_json:
-            return HttpResponse(json.dumps({'msg': 'Please send json data'}, indent=4), status=400)
-
+        print(data)
         p_data = json.loads(data)
         student_id = p_data.get('id', None)
         if student_id is not None:
@@ -102,13 +97,3 @@ class Student_data(View, SerializeMixin):
             if status == 1:
                 return HttpResponse(json.dumps({'msg': 'deleted successfully'}))
             return HttpResponse(json.dumps({'msg': 'some issue occured ,try again'}))
-
-
-
-
-
-
-
-
-
-
