@@ -1,26 +1,13 @@
-ERROR:root:student id available in our system
-ERROR:root:student id available in our system
+INFO:root:student id available in our system
 INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
-ERROR:root:student id available in our system
+INFO:root:student id available in our system
 INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /student_basic/api/
-Traceback (most recent call last):
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
-    return bound_method(*args, **kwargs)
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
-    return handler(request, *args, **kwargs)
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py", line 35, in get
-    if len(student_id) > 2:
-TypeError: object of type 'int' has no len()
+INFO:root:Please find all student information
+INFO:root:Please find all student information
+INFO:root:Please find all student information
 INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
-ERROR:root:student id available in our system
+INFO:root: [{"student_name": "mudit", "student_school": "BSEB"}] Please find all student information
+INFO:root: [{"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "mudit", "student_school": "BSEB"}] Please find all student information
+INFO:root: [{"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "raj", "student_school": "BSEB"}] Please find all student information
 INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.

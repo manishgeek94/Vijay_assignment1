@@ -1,36 +1,6 @@
-ERROR:django.request:Internal Server Error: /student_basic/api/
-Traceback (most recent call last):
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
-    return bound_method(*args, **kwargs)
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
-    return handler(request, *args, **kwargs)
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py", line 31, in get
-    'name': stud_obj.student_name,
-AttributeError: 'NoneType' object has no attribute 'student_name'
-INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
-ERROR:root:Student added successfully
-ERROR:root:Student can't be added
+INFO:root:Student added successfully
+INFO:root:Something wrong with data
 INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
-ERROR:root:backlog can't be added
-ERROR:root:backlog can't be added
-INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /student_basic/api2/
-Traceback (most recent call last):
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\base.py", line 186, in _get_response
-    self.check_response(response, callback)
-  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
-    "instead." % name
-ValueError: The view backlogs1_app.views.Backlogs_data didn't return an HttpResponse object. It returned None instead.
+INFO:root: b'{"student_name": "bharat", "student_id": 10083, "student_school": "Xaviers"}' Student added successfully
 INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.

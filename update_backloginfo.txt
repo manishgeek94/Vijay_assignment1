@@ -1,0 +1,2 @@
+INFO:root: {'B_id': <Student: mudit>, 'active_backlogs': 20, 'id': 10080} Updated successfully
+INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
