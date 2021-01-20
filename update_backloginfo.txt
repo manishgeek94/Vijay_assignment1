@@ -1,2 +1,89 @@
 INFO:root: {'B_id': <Student: mudit>, 'active_backlogs': 20, 'id': 10080} Updated successfully
 INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
+INFO:root:backlog id not available in our system
+ERROR:django.request:Internal Server Error: /student_basic/api2/
+Traceback (most recent call last):
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py", line 197, in put
+    return HttpResponse(json.dumps({'msg': 'backlog id not available in our system'},status_code=201),
+  File "C:\Users\ManishKumar\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+TypeError: __init__() got an unexpected keyword argument 'status_code'
+INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
+INFO:root:backlog id not available in our system
+ERROR:django.request:Internal Server Error: /student_basic/api2/
+Traceback (most recent call last):
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py", line 197, in put
+    return render(json.dumps({'msg': 'backlog id not available in our system'},status_code=201),
+  File "C:\Users\ManishKumar\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+TypeError: __init__() got an unexpected keyword argument 'status_code'
+INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
+INFO:root:backlog id not available in our system
+ERROR:django.request:Internal Server Error: /student_basic/api2/
+Traceback (most recent call last):
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py", line 197, in put
+    return HttpResponse(json.dumps({'msg': 'backlog id not available in our system'},status_code='201'),
+  File "C:\Users\ManishKumar\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+TypeError: __init__() got an unexpected keyword argument 'status_code'
+INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
+INFO:root:backlog id not available in our system
+ERROR:django.request:Internal Server Error: /student_basic/api2/
+Traceback (most recent call last):
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\venv\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py", line 197, in put
+    return HttpResponse(json.dumps({'msg': 'backlog id not available in our system'},status=400),
+  File "C:\Users\ManishKumar\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+TypeError: __init__() got an unexpected keyword argument 'status'
+INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
+INFO:root:backlog id not available in our system
+WARNING:django.request:Bad Request: /student_basic/api2/
+INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.

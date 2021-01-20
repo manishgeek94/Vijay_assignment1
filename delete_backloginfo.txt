@@ -1,0 +1,3 @@
+INFO:root: {'backlogs1_app.Backlogs': 1} deleted successfully
+INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\models.py changed, reloading.
+INFO:root:backlogid not found 

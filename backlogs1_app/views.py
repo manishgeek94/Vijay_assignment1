@@ -68,7 +68,7 @@ class Student_data(View):
         if form.is_valid():
             obj = form.save(commit=True)
             logging.info(' %s Student added successfully', data)
-            return HttpResponse(json.dumps({'msg': 'Student added successfully'}))
+            return HttpResponse(json.dumps({'msg': 'Student added successfully'}), status=201)
         if form.errors:
             json_data = json.dumps(form.errors)
             logging.info("Something wrong with data")
@@ -83,7 +83,7 @@ class Student_data(View):
             stud_obj = self.get_student_by_id(student_id)
             if stud_obj is None:
                 logging.info('Student id not available in our system')
-                return HttpResponse(json.dumps({'msg': 'Student id not available in our system'}),
+                return HttpResponse(json.dumps({'msg': 'Student id not available in our system'}), status=400,
                                     content_type='application/json')
             new_student = p_data
 
@@ -121,7 +121,7 @@ class Student_data(View):
             if status == 1:
                 logging.info('deleted successfully', deleted_item)
                 return HttpResponse(json.dumps({'msg': 'deleted successfully'}))
-            return HttpResponse(json.dumps({'msg': 'some issue occured ,try again'}))
+            return HttpResponse(json.dumps({'msg': 'some issue occured ,try again'}), status=404)
 
 
 @method_decorator(csrf_exempt, name='dispatch')
@@ -194,7 +194,7 @@ class Backlogs_data(View):
             bcklgs_obj = self.get_backlogs_by_id(backlogs_id)
             if bcklgs_obj is None:
                 logging.info('backlog id not available in our system')
-                return HttpResponse(json.dumps({'msg': 'backlog id not available in our system'}),
+                return HttpResponse(json.dumps({'msg': 'backlog id not available in our system'}), status=400,
                                     content_type='application/json')
             new_backlogs = p_data
 
@@ -236,17 +236,16 @@ class Backlogs_data(View):
 @csrf_exempt
 def atleast_one_record(request):
     """This function basically gives you name of student which is having atleast one active backlogs"""
-    try:
-        backlogs_obj = Backlogs.objects.filter(active_backlogs__gte=1)
-    except Backlogs.DoesNotExist:
-        backlogs_obj = None
+    backlogs_obj = Backlogs.objects.filter(active_backlogs__gte=1)
+    print(backlogs_obj)
+    empty_dict = {}
+    empty_list = []
+    for entry in backlogs_obj:
+        empty_dict[entry.B_id.student_name] = entry.active_backlogs
+        empty_list.append([entry.B_id.student_name, entry.active_backlogs])
 
-    if backlogs_obj is None:
-        return HttpResponse(json.dumps({'msg': 'No item found'}))
+    if len(empty_list) < 1:
+        return HttpResponse(json.dumps({'msg': 'No item found'}), status=404)
     else:
-        empty_dict = {}
-        for entry in backlogs_obj:
-            empty_dict[entry.B_id.student_name] = entry.active_backlogs
-        print(empty_dict)
-        b = json.dumps(empty_dict)
+        b = json.dumps(empty_list)
         return HttpResponse(b, content_type='application/json')

@@ -12,6 +12,6 @@ class Student(models.Model):
 
 class Backlogs(models.Model):
     active_backlogs = models.IntegerField()
-    B_id = models.ForeignKey(Student, on_delete=models.CASCADE,primary_key=True,default=0)
+    B_id = models.ForeignKey(Student, on_delete=models.CASCADE,primary_key=True)
 
 

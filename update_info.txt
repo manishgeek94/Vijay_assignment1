@@ -1,0 +1,21 @@
+INFO:root:Updated successfully
+INFO:root:Student id not available in our system
+WARNING:django.request:Bad Request: /student_basic/api/
+INFO:root:Updated successfully
+INFO:root:Student id not available in our system
+WARNING:django.request:Bad Request: /student_basic/api/
+INFO:root:Updated successfully
+INFO:root:Student id not available in our system
+WARNING:django.request:Bad Request: /student_basic/api/
+INFO:root:Updated successfully
+INFO:root:Student id not available in our system
+WARNING:django.request:Bad Request: /student_basic/api/
+INFO:root:student_id data found to delete
+INFO:root:Student id not available in our system
+WARNING:django.request:Bad Request: /student_basic/api/
+INFO:root:Student id not available in our system
+WARNING:django.request:Bad Request: /student_basic/api/
+INFO:root:Updated successfully
+INFO:root:Student id not available in our system
+WARNING:django.request:Bad Request: /student_basic/api/
+INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.

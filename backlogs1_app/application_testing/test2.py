@@ -1,29 +1,30 @@
 import requests
 import json
+import pytest
 
 
-def get_resource(id=None):
-    data = {
-
-    }
-    if data is not None:
-        data = {
-
-            'id': id
-        }
-
-    resp = requests.get('http://127.0.0.1:8000/student_basic/api2/', data=json.dumps(data))
-    print(resp.json())
-
-
-get_resource(10080)
+# def get_resource(id=None):
+#     data = {
+#
+#     }
+#     if data is not None:
+#         data = {
+#
+#             'id': id
+#         }
+#
+#     resp = requests.get('http://127.0.0.1:8000/student_basic/api/', data=json.dumps(data))
+#     print(resp.json())
+#
+#
+# get_resource(10080)
 
 #
 # def create_resource():
 #     new_data = {
 #
 #         'student_name': 'bharat',
-#         'student_id': 10083,
+#         'student_id': 10096,
 #         'student_school': 'Xaviers',
 #     }
 #     resp = requests.post('http://127.0.0.1:8000/student_basic/api/', data=json.dumps(new_data))
@@ -37,7 +38,7 @@ get_resource(10080)
 #     new_data = {
 #
 #         'active_backlogs': 11,
-#         'B_id': 10093,
+#         'B_id': 10082,
 #     }
 #     resp = requests.post('http://127.0.0.1:8000/student_basic/api2/', data=json.dumps(new_data))
 #     print(resp.status_code)
@@ -60,25 +61,25 @@ get_resource(10080)
 #
 # #
 # #
-# update_resource(10080)
-# #
+# update_resource(100100)
+#
 # def delete_resource(id):
 #     data = {
 #
 #         'id': id,
 #     }
-#     resp = requests.delete('http://127.0.0.1:8000/student_basic/api2/', data=json.dumps(data))
+#     resp = requests.delete('http://127.0.0.1:8000/student_basic/api/', data=json.dumps(data))
 #     print(resp.status_code)
 #     print(resp.json())
 #
 #
-# delete_resource(10090)
+# delete_resource(100100)
+
+#
+def active_resource():
+    resp = requests.get('http://127.0.0.1:8000/student_basic/at_least/')
+    print(resp.status_code)
+    print(resp.json())
 
 
-# def active_resource():
-#     resp = requests.get('http://127.0.0.1:8000/student_basic/at_least/')
-#     print(resp.status_code)
-#     print(resp.json())
-#
-#
-# active_resource()
+active_resource()
