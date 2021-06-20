@@ -11,3 +11,116 @@ INFO:root: [{"student_name": "mudit", "student_school": "BSEB"}] Please find all
 INFO:root: [{"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "mudit", "student_school": "BSEB"}] Please find all student information
 INFO:root: [{"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "raj", "student_school": "BSEB"}] Please find all student information
 INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
+INFO:root:student id available in our system
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}, {"student_name": "bharat", "student_school": "Xaviers"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "raj", "student_school": "BSEB"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "raj", "student_school": "BSEB"}, {"student_name": "bharat", "student_school": "Xaviers"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "raj", "student_school": "BSEB"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "raj", "student_school": "BSEB"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}] Please find all student information
+INFO:root:student id available in our system
+ERROR:django.request:Internal Server Error: /student_basic/api/
+Traceback (most recent call last):
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/backlogs1_app/views.py", line 39, in get
+    'name': stud_obj.student_name,
+AttributeError: 'NoneType' object has no attribute 'student_name'
+INFO:django.utils.autoreload:/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/backlogs1_app/views.py changed, reloading.
+INFO:root:student id not available in our system
+ERROR:django.request:Internal Server Error: /student_basic/api/
+Traceback (most recent call last):
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/backlogs1_app/views.py", line 42, in get
+    return HttpResponse(json.dumps({'msg': 'student id not available in our system'},
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+TypeError: __init__() got an unexpected keyword argument 'content_type'
+INFO:django.utils.autoreload:/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/backlogs1_app/views.py changed, reloading.
+INFO:root:student id not available in our system
+ERROR:django.request:Internal Server Error: /student_basic/api/
+Traceback (most recent call last):
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/backlogs1_app/views.py", line 40, in get
+    return HttpResponse(json.dumps({'msg': 'student id not available in our system'},
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+TypeError: __init__() got an unexpected keyword argument 'content_type'
+INFO:django.utils.autoreload:/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/backlogs1_app/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/backlogs1_app/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /student_basic/api/
+Traceback (most recent call last):
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/backlogs1_app/views.py", line 40, in get
+    return HttpResponse(json.dumps({'msg': 'student id not available in our system'},
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+TypeError: __init__() got an unexpected keyword argument 'content_type'
+ERROR:django.request:Internal Server Error: /student_basic/api/
+Traceback (most recent call last):
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/backlogs1_app/views.py", line 40, in get
+    return HttpResponse(json.dumps({'msg': 'student id not available in our system'},
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+TypeError: __init__() got an unexpected keyword argument 'content_type'
+INFO:django.utils.autoreload:/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/backlogs1_app/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/backlogs1_app/views.py changed, reloading.

@@ -1,6 +1,6 @@
 import requests
 import json
-import pytest
+# import pytest
 
 
 # def get_resource(id=None):
@@ -15,9 +15,9 @@ import pytest
 #
 #     resp = requests.get('http://127.0.0.1:8000/student_basic/api/', data=json.dumps(data))
 #     print(resp.json())
-#
-#
-# get_resource(10080)
+# #
+# #
+# get_resource(10096)
 
 #
 # def create_resource():
@@ -49,19 +49,21 @@ import pytest
 
 
 # # #
-# def update_resource(id):
-#     data = {
-#         'active_backlogs': 20,
-#         'id': id,
-#     }
-#     resp = requests.put('http://127.0.0.1:8000/student_basic/api2/', data=json.dumps(data))
-#     print(resp.status_code)
-#     print(resp.json())
+def update_resource(id):
+    new_data = {
+
+        'student_name': 'bharat',
+        'student_id': id,
+        'student_school': 'Xaviers1',
+    }
+    resp = requests.put('http://127.0.0.1:8000/student_basic/api/', data=json.dumps(new_data))
+    print(resp.status_code)
+    print(resp.json())
+
+
 #
 #
-# #
-# #
-# update_resource(100100)
+update_resource(1009777)
 #
 # def delete_resource(id):
 #     data = {
@@ -76,10 +78,10 @@ import pytest
 # delete_resource(100100)
 
 #
-def active_resource():
-    resp = requests.get('http://127.0.0.1:8000/student_basic/at_least/')
-    print(resp.status_code)
-    print(resp.json())
-
-
-active_resource()
+# def active_resource():
+#     resp = requests.get('http://127.0.0.1:8000/student_basic/at_least/')
+#     print(resp.status_code)
+#     print(resp.json())
+#
+#
+# active_resource()

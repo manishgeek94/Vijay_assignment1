@@ -35,18 +35,17 @@ class Student_data(View):
         if student_id is not None:
             stud_obj = self.get_student_by_id(student_id)
 
+            if stud_obj is None:
+                # logging.info('student id not available in our system')
+                return HttpResponse(json.dumps({'msg': 'student id not available in our system'}),
+                                    content_type='application/json')
+
             a = {
                 'name': stud_obj.student_name,
                 'school': stud_obj.student_school
             }
 
             b = json.dumps(a)
-
-            if stud_obj is None:
-                logging.info('student id not available in our system')
-                return HttpResponse(json.dumps({'msg': 'student id not available in our system'},
-                                               content_type='application/json'))
-            logging.info('student id available in our system')
             return HttpResponse(b, content_type='application/json')
 
         qs = Student.objects.all()
@@ -75,15 +74,17 @@ class Student_data(View):
             return HttpResponse(json_data, content_type='application/json')
 
     def put(self, request, *args, **kwargs):
-        logging.basicConfig(filename='update_info.txt', level=logging.INFO)
+        # logging.basicConfig(filename='update_info.txt', level=logging.INFO)
         data = request.body
+        print(data)
         p_data = json.loads(data)
-        student_id = p_data.get('id', None)
+        student_id = p_data.get('student_id', None)
         if student_id is not None:
             stud_obj = self.get_student_by_id(student_id)
+            print(stud_obj)
             if stud_obj is None:
-                logging.info('Student id not available in our system')
-                return HttpResponse(json.dumps({'msg': 'Student id not available in our system'}), status=400,
+                # logging.info('Student id not available in our system')
+                return HttpResponse(json.dumps({'msg': 'Student id not available in our system'}),
                                     content_type='application/json')
             new_student = p_data
 

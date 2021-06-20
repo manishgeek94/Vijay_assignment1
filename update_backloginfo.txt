@@ -87,3 +87,69 @@ INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Acti
 INFO:root:backlog id not available in our system
 WARNING:django.request:Bad Request: /student_basic/api2/
 INFO:django.utils.autoreload:C:\Users\ManishKumar\Desktop\Vijay_assignment1\Active_Backlogs\backlogs1_app\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /student_basic/api2/
+Traceback (most recent call last):
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view backlogs1_app.views.Backlogs_data didn't return an HttpResponse object. It returned None instead.
+ERROR:django.request:Internal Server Error: /student_basic/api2/
+Traceback (most recent call last):
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view backlogs1_app.views.Backlogs_data didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/backlogs1_app/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /student_basic/api2/
+Traceback (most recent call last):
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view backlogs1_app.views.Backlogs_data didn't return an HttpResponse object. It returned None instead.
+ERROR:django.request:Internal Server Error: /student_basic/api/
+Traceback (most recent call last):
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view backlogs1_app.views.Student_data didn't return an HttpResponse object. It returned None instead.
+ERROR:django.request:Internal Server Error: /student_basic/api/
+Traceback (most recent call last):
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view backlogs1_app.views.Student_data didn't return an HttpResponse object. It returned None instead.
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}, {"student_name": "bharat", "student_school": "Xaviers"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "raj", "student_school": "BSEB"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "raj", "student_school": "BSEB"}, {"student_name": "bharat", "student_school": "Xaviers"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "raj", "student_school": "BSEB"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}] Please find all student information
+INFO:root: [{"student_name": "Raj", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "ram", "student_school": "Army public school"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "mudit", "student_school": "BSEB"}, {"student_name": "raj", "student_school": "BSEB"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}, {"student_name": "bharat", "student_school": "Xaviers"}] Please find all student information
+ERROR:django.request:Internal Server Error: /student_basic/api/
+Traceback (most recent call last):
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/virtualenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view backlogs1_app.views.Student_data didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:/Users/manishkumar/Desktop/My_Projects/Vijay_assignment1/backlogs1_app/views.py changed, reloading.
